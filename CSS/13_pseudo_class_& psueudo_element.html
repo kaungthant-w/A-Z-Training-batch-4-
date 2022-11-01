@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Psuedo Class & Psuedo Element  </title>
+
+    <style>
+        body {
+            background-color: #4ea8a4;
+        }
+
+        .content {
+            background-color: rgba(255, 255, 255, 0.4);
+            width: 30rem;
+            padding: 1.5rem 2rem;
+            margin: 5rem auto;
+            border-radius: 20px;
+            transition: 0.2s;
+
+        }
+
+        .content:hover {
+            background-color: rgba(255, 255, 255, 0.6);
+        }
+
+        .title {
+            color:rgb(223, 111, 46);
+            text-align: center;
+            transition: 0.2s;
+
+        }
+
+        .title:hover {
+            color:rgb(145, 64, 18);
+        }
+
+        .para {
+            text-align: justify;
+            color: rgb(126, 128, 131);
+            
+        }
+
+        .btnCenter {
+            text-align: center;
+        }
+
+        .btn {
+            font-family:'Arial Narrow', Arial, sans-serif;
+            width: 70%;
+            background-color: rgb(170, 214, 228);
+            color: rgb(108, 99, 194);
+            font-size: 0.8rem;
+            font-weight: 600;
+            padding: 0.6rem 1.2rem;
+            border-radius: 7rem;
+            border: 1px solid rgba(48, 108, 110,0.4);
+            transition: 0.3s;
+        }
+
+        .btn:active {
+            font-size: 0.9rem;
+            background-color: rgb(126, 195, 216);
+        }
+
+        .input-container {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .name {
+            width: 15rem;
+            height: 2rem;
+            border-radius: 1.2rem;
+            border: none;
+            padding-left: 1.2rem;
+            font-size: 1.2rem;
+        }
+
+        .name:focus {
+            background-color: rgb(170, 214, 228);
+            color: chocolate;
+        }
+
+        .myClass {
+            color: rgb(146, 72, 20);
+            font-size: 1.5rem;
+            font-weight: 900;
+        }
+
+        /* .myClass::before {
+            content: "Before";
+            margin-right: 0.5rem;
+            color: rgb(255, 255, 255);
+        } */
+
+        .myClass::before {
+            content: url("../images/flash.png");
+            margin-right: 0.5rem;
+        }
+
+        .myClass::after {
+            content: "after";
+            margin-left: 0.5rem;
+            color: rgb(224, 30, 176);
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h2 class="title">Hello, EveryOne!</h2>
+        <p class="para">Cupiditate excepturi praesentium, omnis doloribus, eaque corporis vel mollitia debitis maiores distinctio error est delectus ex repellat labore rerum facere quos. Dignissimos ea iusto voluptate dolorum deleniti veritatis deserunt maiores repellendus quo repellat quas sed quasi assumenda facere adipisci quod aliquid cumque debitis ab ducimus molestias enim quidem.</p>
+        <div class="btnCenter">
+            <button class="btn">Register</button>
+        </div>
+    </div>
+
+    <div class="input-container">
+        <input type="text" class="name">
+    </div>
+
+    <div class="input-container">
+        <span class="myClass">Hello World</span>
+    </div>
+</body>
+</html>

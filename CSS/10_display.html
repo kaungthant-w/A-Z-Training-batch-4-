@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display (block, inline, inline-block and none)</title>
+
+    <style>
+
+        h3 {
+            text-decoration: underline;
+            margin: 50px 0 50px 0;
+            text-align: center;
+        }
+
+        h3, h4 {
+            color: rgb(7, 102, 146);
+            font-size: large;
+            text-transform: uppercase;
+        }
+
+        .blockEl, .inlineEl, .ibElement, .dNone {
+            margin-left: 30px;
+            color: aliceblue;
+            
+        }
+        
+        .blockEl {
+            background-color: rgb(12, 94, 94);
+            width: 50%;
+            height: 50px;
+            
+        }
+
+        .inlineEl {
+            background-color: blueviolet;
+            width: 50%;
+            height: 300px;
+
+        }
+
+        .ibElement {
+            background-color: rgb(207, 23, 109);
+            display: inline-block;
+            width: 40%;
+            height: 50px;
+        }
+
+        .dNone {
+            background-color: brown;
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+    <h3>Block Level Element</h3>
+    <h4 class="blockEl">Block 1</h4>
+    <h4 class="blockEl">Block 2</h4>
+
+    <h3>Inline Level Element</h3>
+    <span class="inlineEl">Inline One</span>
+    <span class="inlineEl">Inline Two</span>
+
+    <h3>Inline - Block Element</h3>
+    <span class="ibElement"> ib Element One </span>
+    <span class="ibElement"> ib Element Two </span>
+
+    <h3>Display None</h3>
+    <h4 class="dNone">dNone One</h4>
+    <h4 class="dNone">dNone Two</h4>
+
+</body>
+</html>

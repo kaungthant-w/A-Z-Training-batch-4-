@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Design</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            
+        }
+
+        .table {
+            width: 80%;
+            text-align: left;
+            border-collapse: collapse;
+            border: 1px solid #04aa6d30;
+        }
+
+        .table thead {
+            background-color: #04aa6d;
+            color: #fff;
+        }
+
+        .table th,
+        .table td,
+        .table tr {
+            padding: 10px 15px;
+        }
+        
+        .table tr:nth-child(even) {
+            background-color: #eeeeee30;
+        }
+        
+        .table tbody tr:hover {
+            background-color: #eeeeee99;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Address</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Kyaw Kyaw</td>
+                    <td>kyawkyaw@gmail.com</td>
+                    <td>09321431413</td>
+                    <td>Yangon</td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>Ma Mya</td>
+                    <td>myamya@gmail.com</td>
+                    <td>09253456765</td>
+                    <td>Mandalay</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>U Kyaw Myo</td>
+                    <td>kyawmyo@gmail.com</td>
+                    <td>09442334432</td>
+                    <td>Sagaing</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Daw Hnin Yin</td>
+                    <td>hninyin@gmail.com</td>
+                    <td>09442243141</td>
+                    <td>Magway</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>U Sum Pi</td>
+                    <td>maungthan@gmail.com</td>
+                    <td>09787631412</td>
+                    <td>HaKha</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

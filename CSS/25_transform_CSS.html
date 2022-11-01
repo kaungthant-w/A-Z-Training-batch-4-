@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform CSS</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .content {
+            columns: 300px 3;
+        }
+
+        h1 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+            font-size: 50px;
+            margin: 20px auto;
+            color: rgb(55, 9, 73);
+        }
+
+        img {
+            width: 100%;
+            transition: 0.5s;
+        }
+
+        img:hover {
+            /* transform: translate(-120px); */
+            /* transform: translate(-120px, -100px); */
+            /* transform: scale(2); */
+            /* transform: scale(1.2, 0.2); */
+            /* transform: scale(1.02); */
+            /* transform: rotate(0.4turn); */
+            /* transform: rotate(1turn); */
+            /* transform: rotate(3deg); */
+            /* filter: brightness(0.4); */
+            /* filter: brightness(1.5); */
+            /* transform: translate(-10px, -10px) scale(1.02) skew(8deg, 2deg); */
+            transform: scale(1.02);
+            filter:brightness(1.2) drop-shadow(16px 16px 20px #92929240);
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome To Movie Wall</h1>
+    <div class="content">
+        <img src="movies_img/s9.jpg" alt="">
+        <img src="movies_img/s1.jpg" alt="">
+        <img src="movies_img/s12.jpg" alt="">
+        <img src="movies_img/s4.webp" alt="">
+        <img src="movies_img/s5.webp" alt="">
+        <img src="movies_img/s6.jpg" alt="">
+        <img src="movies_img/s7.jpg" alt="">
+        <img src="movies_img/s3.jpg" alt="">
+        <img src="movies_img/s8.jpg" alt="">
+        <img src="movies_img/s10.jpg" alt="">
+    </div>
+</body>
+</html>

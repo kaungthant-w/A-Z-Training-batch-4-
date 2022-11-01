@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Combinators ( Adjacent Sibling Selector , General Sibling Selector, Attribute Selectors )</title>
+
+    <style>
+        #ASibling + p {
+            color: green;
+            background-color: aqua;
+        }
+
+        #GSibling ~ p {
+            color: white;
+            background-color: blueviolet;
+        }
+
+        a[target=_blank] {
+            background-color: brown;
+            color: wheat;
+        }
+
+        a[target=_top] {
+            background-color: cornflowerblue;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h3 id="ASibling">Adjacent Sibling Selector (+)</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi sequi minus aperiam amet reiciendis quas sint nihil sed distinctio totam, eveniet accusamus mollitia earum maiores animi quam cumque possimus ducimus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quas non corporis eaque cum optio animi omnis quod molestiae harum.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum, voluptatibus.</p>
+    </div>
+
+    <div>
+        <h3 id="GSibling">General Sibling Selector (~)</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi sequi minus aperiam amet reiciendis quas sint nihil sed distinctio totam, eveniet accusamus mollitia earum maiores animi quam cumque possimus ducimus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quas non corporis eaque cum optio animi omnis quod molestiae harum.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum, voluptatibus.</p>
+    </div>
+
+    <div>
+        <h3 id="attribute">CSS Attribute Selectors</h3>
+        <a href="https://www.w3schools.com">W3Schools website</a>
+        <a href="https://www.google.com" target="_blank">Google Site</a>
+        <a href="https://www.wikipedia.org" target="_top">Wikipedia Website</a>
+    </div>
+</body>
+</html>

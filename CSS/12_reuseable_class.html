@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reuseable Class</title>
+    <style>
+
+        body {
+            background-color: rgb(219, 211, 211);
+        }
+
+        h3 {
+            font-size: 2rem;
+            color: rgb(124, 41, 10);
+            text-align: center;
+            text-decoration: underline;
+            text-decoration-color:greenyellow;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+
+        }
+
+        .boxLine {
+            background-color: rgb(80, 23, 138);
+            display: inline-block;
+            width: 2px;
+            height: 7rem;
+            margin-right: 2rem;
+
+        }
+
+        .box-container {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .box {
+            display: inline-block;
+            font-weight: 500;
+            margin-right: 1.5rem;
+            width: 6rem;
+            height: 6rem;
+            text-align: center;
+        }
+        
+        .boxSample {
+            background-color: rgb(138, 43, 226);
+            color: rgb(211, 194, 206);
+        }
+
+        .boxMath {
+            background-color: rgb(228, 74, 36);
+            color: rgb(141, 8, 41);
+        }
+
+        .boxMathCircle {
+            border-radius: 50%;
+        }
+
+        .boxMathBorder {
+            border: 0.3rem solid rgb(40, 154, 189);
+        }
+
+
+    </style>
+</head>
+<body>
+    <h3>Reuseable Class</h3>
+
+    <div class="box-container">
+        <span class="box boxSample"></span>
+        <span class="box boxSample"></span>
+        <span class="box boxSample"></span>
+        <span class="box boxSample"></span>
+    </div>
+
+    <div class="box-container">
+        <span class="box boxMath"></span>
+        <span class="box boxMath boxMathCircle"></span>
+        <span class="boxLine"></span>
+        <span class="box boxMath boxMathBorder"></span>
+        <span class="box boxMath boxMathCircle boxMathBorder"></span>
+    </div>
+    
+
+</body>
+</html>

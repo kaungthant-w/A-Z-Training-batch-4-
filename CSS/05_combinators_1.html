@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinators ( descendant selector , child selector )</title>
+
+    <style>
+        #descendant p {
+            color: red;
+        }
+
+        #child > p {
+            color: orange;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <div id="descendant">
+        <h1>Hello, Descendant Selector</h1>
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, optio?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, optio?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, optio?</p> 
+        <span><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis veniam aut dolorum! Optio, minus reprehenderit.</p></span>
+        <span><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis veniam aut dolorum! Optio, minus reprehenderit.</p></span>  
+    </div>
+
+    <hr>
+
+    <div id="child">
+        <h1>Hello, Child Selector</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, optio?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, optio?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, optio?</p>
+        <span><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis veniam aut dolorum! Optio, minus reprehenderit.</p></span>
+        <span><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis veniam aut dolorum! Optio, minus reprehenderit.</p></span>
+    </div>
+</body>
+</html>

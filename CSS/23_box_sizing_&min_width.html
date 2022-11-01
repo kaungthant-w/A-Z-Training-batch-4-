@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Sizing & Min Width Height</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: rgb(180, 180, 180);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div {
+            margin: 30px 0;
+        }
+
+        .content_1 {
+            width: 500px;
+            height: 200px;
+            border: 4px solid #ff3;
+            /* overflow: hidden; */
+            /* overflow: scroll; */
+            /* overflow-y:scroll; */
+            /* overflow-x:scroll; */
+            overflow: scroll;
+        }
+
+        .content_2 {
+            width: 400px;
+            min-height: 200px;
+            border: 5px solid red;
+        }
+        
+        .content_3 {
+            /* max-width: 200px; */
+            min-width: 200px;
+            max-height: 100px;
+            border: 5px solid rebeccapurple;
+            overflow: scroll;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="content_1">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur expedita exercitationem, est rem ullam debitis dignissimos laborum laudantium necessitatibus soluta possimus quia commodi corrupti. Quam architecto provident accusantium blanditiis dolor sequi magni minus temporibus assumenda totam nostrum dolorem nobis, fuga modi earum id ipsam unde. Praesentium culpa illo illum veniam quisquam tempora, repellendus, corrupti quaerat maxime itaque sapiente ipsum doloremque deserunt aspernatur ea modi nisi consequuntur sit, blanditiis dignissimos minus ab impedit tias!</p>
+    </div>
+    <div class="content_2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis eveniet nesciunt eligendi obcaecati a quaerat repellendus voluptatum esse? Non nulla accusamus tempore molestias laboriosam numquam cumque repellat nesciunt rerum amet earum distinctio, quibusdam soluta magnam quas vero ut odit impedit maxime, esse, cupiditate repudiandae qui. Reprehenderit quisquam est perferendis explicabo distinctio cum eius? Quam iusto sunt, libero excepturi repudiandae rem hic quod dolorem! Repellat repudiandae, ratione amet perferendis blanditiis rerum. Dolor atque natus cupiditate! Dolore culpa, molestias aperiam porro expedita nam quaerat aut ipsa id consectetur repudiandae iste laborum perspiciatis, rem nihil hic fugiat dolorem aliquam. Ex atque nemo ut.</p>
+    </div>
+
+    <div class="content_3">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis eveniet nesciunt eligendi obcaecati a quaerat repellendus voluptatum esse? Non nulla accusamus tempore molestias laboriosam numquam cumque repellat nesciunt rerum amet earum distinctio, quibusdam soluta magnam quas vero ut odit impedit maxime, esse, cupiditate repudiandae qui. Reprehenderit quisquam est perferendis explicabo distinctio cum eius? Quam iusto sunt, libero excepturi repudiandae rem hic quod dolorem! Repellat repudiandae, ratione amet perferendis blanditiis rerum. Dolor atque natus cupiditate! Dolore culpa, molestias aperiam porro expedita nam quaerat aut ipsa id consectetur repudiandae iste laborum perspiciatis, rem nihil hic fugiat dolorem aliquam. Ex atque nemo ut.</p>
+    </div>
+</body>
+</html>
