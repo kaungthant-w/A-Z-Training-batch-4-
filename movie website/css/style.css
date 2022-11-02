@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Neonderthaw&family=Oleo+Script:wght@400;700&family=Poppins:ital,wght@0,100;0,300;0,700;0,800;0,900;1,200&family=Rubik:wght@400;500;700;800;900&display=swap');
+
+/* font-family: 'Poppins', sans-serif; */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --main-color : #d86b05;
+    --text-color : #fff;
+    --bg-color : #020307;
+}
+
+body {
+    background-color: #020307;
+    color: var(--text-color);
+}
+
+header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 5rem;
+    transition: 0.5s;
+}
+
+.logo a {
+    font-style: 1.2rem;
+    color: var(--text-color);
+    
+    display: flex;
+    align-items: center;
+}
+
+.logo .logoText {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.2rem;
+    
+}
+
+.logo i {
+    margin-right: 5px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    column-gap: 5rem;
+}
+
+.navbar li {
+    position: relative;
+}
+
+.navbar a::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color:var(--main-color);
+    position: absolute;
+    bottom: -4px;
+    transition: 0.3s;
+}
+
+.navbar a:hover::after, .navbar .active::after {
+    width: 100%;
+}
+
+.btn {
+    background-color: var(--main-color);
+    padding: 0.7rem 1.4rem;
+    border-radius: 3px;
+    font-weight: 400;
+}
+
+
+
