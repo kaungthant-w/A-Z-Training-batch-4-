@@ -21,6 +21,7 @@ body {
     color: var(--text-color);
 }
 
+/* navbar  */
 header {
     width: 100%;
     position: sticky;
@@ -29,6 +30,7 @@ header {
     justify-content: space-between;
     padding: 1rem 5rem;
     transition: 0.5s;
+    background-color:var(--bg-color);
 }
 
 .logo {
@@ -91,6 +93,7 @@ header {
     background-color: rgb(209, 8, 8);
 }
 
+/* cover  */
 
 .container {
     width: 100%;
@@ -111,20 +114,16 @@ header {
     opacity: 0.5;
 }
 
-
 .home-text {
     padding-left: 150px;
 
 }
 
-
 .home-text span {
     color: var(--text-color);
     font-weight: 500;
     text-transform: uppercase;
-
 }
-
 
 .home-text h1 {
     color: var(--text-color);
@@ -159,3 +158,49 @@ header {
     filter: brightness(1.3);
 }
 
+/* movie section */
+.movies .heading {
+    max-width: 968px;
+    margin: 2rem auto;
+    font-style: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--main-color);
+    /* text-align: center; */
+}
+
+.movie-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 2rem;
+    max-width: 980px;
+    margin: 2rem auto;
+}
+
+.box .box-img {
+    width: 100%;
+    height: 270px;
+}
+
+.box .box-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s;
+    filter: brightness(0.8);
+    cursor: pointer;
+}
+
+.box h3 {
+    margin-top: 0.5rem;
+}
+
+.box span {
+    font-size:0.8rem;
+}
+
+.box .box-img img:hover {
+    transform: translateY(-10px);
+    box-shadow: 10px 10px 10px #fefefe05;
+    filter: brightness(1);
+}
