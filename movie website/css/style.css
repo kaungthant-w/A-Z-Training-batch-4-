@@ -316,8 +316,286 @@ h4 {
 }
 
 @media (max-width:1080px) {
+    .home-text {
+        padding: 0px 100px;
+    }
+}
+
+@media (max-width:997px) {
+
+    header {
+        padding: 1rem 3rem;
+    }
+
+    .home-text h1 {
+        font-size: 3rem;
+        line-height: 1.2;
+        margin-bottom: 2rem;
+    }
+
+    .home-text {
+        padding: 0 4%;
+    }
+
+    .logo .logoText {
+        font-size: 1rem;
+    }
+
+    .navbar {
+        /* display: none; */
+        font-size: 15px;
+        column-gap: 2rem;
+    }
+
+    .btn {
+        font-size: 0.8rem;
+    }
+
+    .home-text .play {
+        right: 2rem;
+    }
+
+    .footer {
+        padding: 0 1.2rem;
+    }
+
+    .social .bx {
+        font-size: 1.5rem;
+    }
+
+    .contact h2 {
+        font-size: 1.4rem;
+    }
+
+    .movie-container {
+        padding: 0.4rem;
+    }
+
+    .movies h2 {
+        padding-left: 1.6rem;
+    }
+}
+
+@media (max-width:740px) {
+    .navbar {
+        display: none;
+    }
+
+    .container img {
+        min-height: 50px;
+    }
+
+    .home-text span {
+        font-size: 0.8rem;
+    }
+
+    .home-text h1 {
+        font-size: 2rem;
+        margin: 1rem 0;
+    }
+
+    .copyright p {
+        font-size: 0.83rem;
+    }
+
+}
+
+@media (max-width:480px) {
+    .logo .logoText {
+        font-size: 0.9rem;
+    }
+
     .container {
-        background-color: yellow;
-        color: orange;
+        min-height: 400px;
+    }
+
+    .btn {
+        padding: 0.5rem 1.2rem;
+    }
+
+    .home-text .play .bx {
+        padding: 6px;
+    }
+
+    .movies .heading {
+        font-size: 1rem;
+    }
+
+    .box h3 {
+        font-size: 0.8rem;
+        letter-spacing: 0.1rem;
+        word-spacing: 0.2rem;
+    }
+
+    .box span {
+        font-size: 0.7rem;
+        color: #c2c2c2;
+    }
+
+    .contact h2 {
+        font-size: 1.1rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer a {
+        margin: 0.3rem 0;
+    }
+
+    .copyright {
+        font-size: 0.8rem;
+        padding:1.4rem;
+        text-align: center;
+    }
+
+    header {
+        padding: 1rem 1.6rem;
+    }
+}
+
+@media (max-width:304px) {
+
+    body {
+        width: 100%;
+    }
+
+    .logo {
+        padding: 4px;
+    }
+    .logo .logoText {
+        font-size: 0.6rem;
+    }
+
+    .container {
+        min-height: 340px;
+    }
+
+    .container .play .bx {
+        margin-right: 10px;
+    }
+
+    .movie-container {
+        padding: 0;
+    }
+
+    .box .box-img {
+        width: 100%;
+        height: 240px;
+    }
+
+    .btn {
+        font-size: 0.5rem;
+        padding: 0.2rem 0.5rem;
+    }
+
+    .box h3 {
+        font-size: 0.5rem;
+    }
+
+    .box span {
+        font-size: 0.4rem;
+    }
+
+    h4 {
+        top: 30%;
+        left: 5%;
+    }
+
+    .contact form .email  {
+        width: 100px;
+    }
+
+    .contact h2 {
+        font-size: 0.8rem;
+    }
+
+    .copyright p {
+        font-size: 10px;
+    }
+}
+
+@media (max-width:180px) {
+    body {
+        font-size: 5px;
+    }
+
+    header {
+        position: relative;
+        padding: 0.7rem 0.6rem;
+    }
+
+    .logo .logoText {
+        font-size: 0.3rem;
+    }
+
+    .btn {
+        font-size: 0.4rem;
+        padding: 0.1rem 0.2rem;
+    }
+
+    .home {
+        display: none;
+    }
+
+    .movies .heading {
+        font-size: 0.6rem;
+        margin: 0;
+        padding: 6px;
+        margin-top: -0.3rem;
+    }
+
+    .movie-container {
+        margin: 0;
+    }
+
+    .box .box-img {
+        width: 160px;
+        height: 140px;
+    }
+
+    .box .box-img img:hover {
+        transform: translateY(-5px);
+        filter: brightness(1);
+    }
+
+    .contact h2 {
+        padding: 5px;
+        font-size: 10px;
+    }
+
+    .contact form {
+        width: 140px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .contact form .email {
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+
+    .contact form .btn {
+        width: 100%;
+        font-size: 0.5rem;
+    }
+
+    .footer .logoText {
+        font-size: 0.6rem;
+    }
+
+    .footer .social .bx {
+        font-size: 1rem;
+        border: none;
+        background-color: transparent;
+    }
+
+    .copyright p {
+        font-size: 8px;
     }
 }
