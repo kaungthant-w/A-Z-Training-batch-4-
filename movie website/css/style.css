@@ -314,3 +314,10 @@ h4 {
     align-items: center;
     justify-content: center;
 }
+
+@media (max-width:1080px) {
+    .container {
+        background-color: yellow;
+        color: orange;
+    }
+}
