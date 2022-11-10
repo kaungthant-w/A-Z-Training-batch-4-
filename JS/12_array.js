@@ -59,8 +59,6 @@ let result = num3.map(function(n) {
 
 console.log(result);
 
-
-
 var arr = [10, 30, 40];
 [a, b, c] = arr;
 console.log(a);
