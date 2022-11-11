@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listener</title>
+    <style>
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        h1 {
+            background-color: rgb(0, 0, 0);
+            width: 300px;
+            height: 100px;
+            line-height: 100px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .btn {
+            color: #fff;
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            margin-bottom: 1rem;
+            cursor: pointer;
+        }
+        .btn_red {
+            background-color: red;
+        }
+        .btn_blue {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">Test</h1>
+        <div class="btnContainer">
+            <button type="button" class="btn btn_red" id="red">Red</button>
+            <button type="button" class="btn btn_blue" id="blue">Blue</button>
+        </div>
+    </div>
+
+    <script>
+        let title = document.getElementById("title");
+        let red = document.getElementById("red"); 
+        let blue = document.getElementById("blue"); 
+ 
+        red.addEventListener("click", function(){
+            // console.log("red");
+            title.style.backgroundColor = "red";
+            title.innerHTML = "red";
+        });
+
+        blue.addEventListener("click", function(){
+            // console.log("blue");
+            title.style.backgroundColor = "blue";
+            title.innerHTML = "blue";
+        });
+    </script>
+</body>
+</html>
