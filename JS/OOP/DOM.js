@@ -1,3 +1,4 @@
+console.log(document.querySelectorAll(".myTitle")[0]);
 // console.log(document);
 // console.log(document.head);
 // console.log(document.body);
@@ -5,7 +6,7 @@
 console.log(document.URL);
 // console.log(document.getElementById("title"));
 let h2 = document.getElementById("title");
-// console.log(h2);
+console.log(h2);
 h2.style.color = "white";
 
 let para = document.getElementById("para");

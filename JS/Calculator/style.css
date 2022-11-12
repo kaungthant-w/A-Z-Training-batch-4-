@@ -1,0 +1,98 @@
+body {
+    background-color: cadetblue;
+    font-family: 'Courier New', Courier, monospace;
+        
+}
+
+.form {
+    background-color: rgba(255, 255, 255, 0.582);
+    width: 400px;
+    padding: 1.5rem 1.8rem;
+    margin: 1.5rem auto;
+    border-radius: 6px;
+}
+
+
+h3 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 900;
+    color: rgb(20, 68, 70);
+    text-shadow: 2px 2px 3px rgb(255, 255, 255);
+}
+
+.inputGroup {
+    margin-bottom: 1.3rem;
+}
+
+.form-label {
+    display: block;
+    color: rgb(13, 58, 59);
+    font-size: 1.05rem;
+    font-weight:900;
+    margin-bottom: 0.2rem;
+        
+}
+
+.label-check {
+    font-size: 1rem;
+    color: rgb(146, 143, 143);
+}
+
+.form-control {
+    width: 90%;
+    padding: 0.6rem;
+    /* margin-bottom: 1.2rem; */
+    border: 1px solid cadetblue;
+    border-radius: 3px;
+    font-size: 1.05rem;
+}
+
+.btn {
+    width: 95%;
+    border: none;
+    padding: 0.5rem;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: rgb(18, 70, 71);
+    border-radius: 5px;
+    margin: 1rem 0;
+    cursor: pointer;
+}
+
+.form-login {
+    text-align: center;
+    color: rgb(82, 82, 82);  
+}
+
+.form-login a {
+    text-decoration: none;
+    color: cadetblue;
+}
+
+.result {
+    /* background-color: rgba(111, 218, 182, 0.082); */
+    border: 2px solid rgba(63, 199, 154, 0.801);
+    padding: 2px 10px;
+    /* height: 20px; */
+    margin: 20px 0;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    text-align: end;
+    font-size: 1.3rem;
+    text-shadow: 1px -1px 2px rgb(243, 243, 243);
+
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.operation {
+    width: 95%;
+}
+
+
+.error {
+    color: red;
+}
