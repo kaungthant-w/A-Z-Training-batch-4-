@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bind with API Part 1</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* height: 100vh; */
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            margin: 10px;
+            
+        }
+
+        .table {
+            width: 80%;
+            text-align: left;
+            border-collapse: collapse;
+            border: 1px solid #04aa6d30;
+        }
+
+        .table thead {
+            background-color: #04aa6d;
+            color: #fff;
+        }
+
+        .table th,
+        .table td,
+        .table tr {
+            padding: 10px 15px;
+        }
+        
+        .table tr:nth-child(even) {
+            background-color: #eeeeee30;
+        }
+        
+        .table tbody tr:hover {
+            background-color: #eeeeee99;
+        }
+
+        img {
+            width: 70px;
+            height: 70px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Price</th>
+                    <th>Rating</th>
+                    <th>Image</th>
+                </tr>
+            </thead>
+            <tbody class="content" id="page">
+                
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        let page = document.getElementById("page");
+        let list;
+        fetch("https://fakestoreapi.com/products")
+        .then(response => response.json())
+        .then(result => {
+            // console.log(result);
+            // console.log(result[0].image);
+            // console.log(result[2].image);
+            // page.innerHTML=`<img src="${result[0].image}"/>`;
+            // page.innerHTML +=`<img src="${result[1].image}"/>`;
+            // page.innerHTML +=`<img src="${result[2].image}"/>`;
+            // page.innerHTML +=`<img src="${result[3].image}"/>`;
+            // page.innerHTML +=`<img src="${result[4].image}"/>`;
+
+            // for (let i = 0; i< result.length; i++) {
+            //     list = `<img src="${result[i].image}"/>`;
+            // }
+            // console.log(list);
+
+            // for (let i = 0; i< result.length; i++) {
+            //     list += `<img src="${result[i].image}"/>`;
+            // }
+            // console.log(list);
+
+            // for (let i = 0; i< result.length; i++) {
+                // list = `<img src="${result[0].image}"/>`;
+                // list = `<img src="${result[1].image}"/>`;
+            //     list = `<img src="${result[i].image}"/>`;
+            // }
+
+            // page.innerHTML = list;
+
+            for (let i = 0; i< result.length; i++) {
+                list += `
+                    <tr>
+                        <td>${result[i].id}</td>    
+                        <td>${result[i].title}</td>    
+                        <td>${result[i].price}</td>    
+                        <td>${result[i].rating.rate}</td>    
+                        <td><a href="${result[i].image}" target="_blink"><img src="${result[i].image}"/></a></td>    
+                    </tr>
+                `;
+
+            }
+
+            page.innerHTML = list;
+        })
+    </script>
+</body>
+</html>
+
