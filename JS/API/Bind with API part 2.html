@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bind with API Part 1</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* height: 100vh; */
+        font-family: "Times New Roman", Times, serif;
+        font-size: 20px;
+        margin: 10px;
+      }
+
+      .table {
+        width: 80%;
+        text-align: left;
+        border-collapse: collapse;
+        border: 1px solid #04aa6d30;
+      }
+
+      .table thead {
+        background-color: #04aa6d;
+        color: #fff;
+      }
+
+      .table th,
+      .table td,
+      .table tr {
+        padding: 10px 15px;
+      }
+
+      .table tr:nth-child(even) {
+        background-color: #eeeeee30;
+      }
+
+      .table tbody tr:hover {
+        background-color: #eeeeee99;
+      }
+
+      img {
+        width: 70px;
+        height: 70px;
+      }
+
+      .card {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+      }
+
+      .card-body {
+        width: 60%;
+        /* height: 100px; */
+        box-shadow: 1px 2px 20px #646464;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem auto;
+        padding: 2rem;
+      }
+
+      .card-body img {
+        width: 200px;
+        /* height: 100px; */
+        height: auto;
+      }
+
+      .info {
+        padding-left: 2rem;
+      }
+
+      small {
+        background-color: #f8ea2a;
+        padding:8px;
+        border-radius: 50%;
+        font-weight: 300;
+        color: rgb(34, 108, 138);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card" id="card">
+      <div class="card-body">
+        <!-- <img src="../../images/flash.jpg" alt="" />
+        <div class="info">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt,
+            nisi!
+          </p> -->
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <table class="table">
+        <thead>
+          <tr>
+            <!-- <th id="myId">ID</th> -->
+            <th>ID</th>
+            <!-- <th onclick="alertMessage()">Title</th> -->
+            <th>Title</th>
+            <th>Price</th>
+            <th>Rating</th>
+            <th>Image</th>
+          </tr>
+        </thead>
+        <tbody class="content" id="page"></tbody>
+      </table>
+    </div>
+
+    <script>
+      let card = document.getElementById("card");
+      let page = document.getElementById("page");
+      let list = ""; //empty string
+
+      card.style.display = "none";
+      fetch("https://fakestoreapi.com/products")
+        .then((response) => response.json())
+        .then((result) => {
+          for (let i = 0; i < result.length; i++) {
+            list += `
+                    <tr onclick="detail(${result[i].id})">
+                        <td>${result[i].id}</td>    
+                        <td>${result[i].title}</td>    
+                        <td>${result[i].price}</td>    
+                        <td>${result[i].rating.rate}</td>    
+                        <td><a href="${result[i].image}" target="_blink"><img src="${result[i].image}"/></a></td>    
+                    </tr>
+                `;
+          }
+
+          page.innerHTML = list;
+        });
+      //   document
+      //     .getElementById("myId")
+      //     .addEventListener("click", function alertMessage() {
+      //       console.log("Hi , this is my id.");
+      //     });
+
+      function alertMessage() {
+        console.log("Hi, This is my row.");
+      }
+
+      function detail(id) {
+        // console.log(id);
+        fetch("https://fakestoreapi.com/products/" + id)
+          .then((response) => response.json())
+          .then((data) => {
+            // console.log(data);
+            card.innerHTML = `
+            <div class="card-body">
+                <img src="${data.image}" alt="">
+                <div class="info">
+                    <h4>${data.title}</h4>
+                    <p>${data.price}$</p>
+                    <small>${data.rating.rate}</small>
+                </div>
+            </div>
+            `;
+            card.style.display = "block";
+          });
+      }
+    </script>
+  </body>
+</html>
