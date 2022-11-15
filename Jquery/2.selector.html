@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+    <style>
+        img {
+            width:300px;
+        }
+
+        .btn {
+            padding: 10px 25px;
+            font-size: 20px;
+            margin-bottom: 1rem;
+            border: none;
+            border-radius: 20px;
+            color: #fff;
+
+        }
+
+        .btnGreen {
+            background-color: green;
+        }
+        .btnRed {
+            background-color: red;
+        }
+        .btnInfo {
+            background-color: indigo;
+        }
+    </style>
+</head>
+<body>
+    <script src="./jquery.min.js"></script>
+    <h2 id="heading">Welcome From Gallery</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, dolores totam corrupti ducimus voluptatibus voluptatum!</p>
+    <div class="btn_container">
+        <button class="btn btnGreen" id="btnShow">Show</button>
+        <button class="btn btnRed" id="btnHide">Hide</button>
+        <button class="btn btnInfo" id="btnToggle">Toggle</button>
+    </div>
+    <img src="./img/bf.jpeg" alt="" id="img">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, dolores totam corrupti ducimus voluptatibus voluptatum!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, dolores totam corrupti ducimus voluptatibus voluptatum!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, dolores totam corrupti ducimus voluptatibus voluptatum!</p>
+
+    <script>
+        // $(document).ready(function(){
+            // console.log("I am here");
+        //     $("h2").click(function(){
+        //         $("h2").hide(3000);
+        //     })
+        // });
+
+        // $(document).ready(function(){
+        //     // $("h2").fadeOut();
+        //     $("#heading").click(function(){
+        //         $(this).fadeOut();
+        //     });
+        // });
+
+        // $(document).ready(function(){
+        //     // $("h2").fadeOut();
+        //     $("#heading").click(function(){
+        //         $("#heading").fadeOut();
+        //         // $("#heading").fadeIn();
+        //     })
+        // });
+
+        $(document).ready(function(){
+            // $("h2").fadeOut();
+            $("h2#heading").click(function(){
+                $("#heading").fadeOut();
+                // $("#heading").fadeIn();
+            })
+        });
+
+        $(document).ready(function(){
+            $("p:first").click(function(){
+                $("#heading").fadeOut();
+                // $("#heading").fadeIn();
+            });
+        });
+
+        $(document).ready(function(){
+            $("p:last").click(function(){
+                $("#heading").fadeIn();
+                // $("#heading").fadeIn();
+            });
+        });
+
+        $(document).ready(function(){
+            $("#btnShow").click(function(){
+                // $("#img").hide();
+                // $("#img").fadeOut();
+                $("#img").fadeIn();
+            });
+        });
+
+        // $(document).ready(function(){
+        //     $("#btnShow").dblclick(function(){
+        //         // $("#img").hide();
+        //         // $("#img").fadeOut();
+        //         $("#img").fadeIn();
+        //     });
+        // });
+
+        // $(document).ready(function(){
+        //     $("#btnShow").mouseleave(function(){
+        //         // $("#img").hide();
+        //         // $("#img").fadeOut();
+        //         $("#img").fadeIn();
+        //     });
+        // });
+
+        $(document).ready(function(){
+            $("#btnHide").click(function(){
+                // $("#img").hide();
+                $("#img").fadeOut();
+            });
+        });
+
+        $(document).ready(function(){
+            $("#btnToggle").click(function(){
+                // $("#img").hide();
+                // $("#img").toggle(1000);
+                $("#img").fadeToggle(500);
+            });
+        });
+
+        $(document).ready(function(){
+            // $("#img").mouseleave(function(){
+                // $("#img").mousedown(function(){
+                // $("#img").mouseenter(function(){
+                    $("#img").mouseout(function(){
+                // $("#img").hide();
+                // $("#img").toggle(1000);
+                $("#img").fadeOut(500);
+            });
+        });
+    </script>
+</body>
+</html>
