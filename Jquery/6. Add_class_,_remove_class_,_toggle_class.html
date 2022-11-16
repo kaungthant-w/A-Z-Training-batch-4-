@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css"/>
+    <title>5.Usage of Javascript or Jquery</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+            /* background-color: black; */
+        }
+        .menu {
+            list-style: none;
+            display: flex;
+            background-color:rgb(15, 83, 83);
+            color: rgba(250, 234, 214,0.6);
+            height: 80px;
+            font-size: 1.2rem;
+            justify-content: center;
+            align-items: center;
+        }
+
+        li {
+            margin-right: 1rem;
+            cursor: pointer;
+            position: relative;
+        }
+        
+        li::before {
+            content: "";
+            width: 0%;
+            background-color: red;
+            height: 2px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            transition: 0.3s;
+        }
+        li:hover {
+            color: rgb(250, 234, 214);
+        }
+
+        li:hover::before {
+            width: 100%;
+        }
+
+        .container {
+            width: 90%;
+            padding: 0.6rem 0 0 2rem;
+        }
+        p {
+            margin-bottom: 2rem;
+            text-indent: 1rem;
+        }
+        img {
+            width: 15rem;
+            /* height: 10rem; */
+        }
+
+        .lastPara {
+            margin-top: 1.6rem;
+        }
+
+        .darkMode {
+            position: absolute;
+            right: 2rem;
+            top: 1.6rem;
+            font-size: 2rem;
+            color: aliceblue;
+            cursor: pointer;
+        } 
+
+        .dark {
+            /* display: none; */
+            background-color: #000;
+            color: rgb(255, 255, 255);
+        }
+
+        .iconDark {
+            color: rgb(10, 4, 4);
+            text-shadow: 2px 3px 3px rgb(131, 130, 130);
+        }
+
+    </style>
+</head>
+<body>
+    <script src="./jquery.min.js"></script>
+    <div class="header">
+        <ul class="menu" id="menu">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Profile</li>
+        </ul>
+        <div class="darkMode">
+            <i class='bx bxs-moon'></i>
+            <!-- <i class='bx bxs-moon' id="light"></i> -->
+            <!-- <i class='bx bxs-moon' id="dark"></i> -->
+        </div>
+    </div>
+    <div class="container" id="container">
+        <div class="content" id="content">
+            <img src="./img/bf.jpeg" alt="">
+            <p class="lastPara">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim quisquam accusamus necessitatibus eius iure, neque cumque dolorem nihil corrupti laudantium corporis non.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim quisquam accusamus necessitatibus eius iure, neque cumque dolorem nihil corrupti laudantium corporis non.</p>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function(){
+
+            $(".bx").click(function(){
+                $("body").toggleClass("dark");
+                $(".bx").toggleClass("iconDark");
+            })
+
+            // $("#light").click(function(){
+            //     $("body").css({"background-color": "black", "color": "#fff"});
+            //     $("#light").toggle(300);
+            //     $("#dark").toggle(300);
+            // })
+
+
+
+            // $("#dark").click(function(){
+            //      $("body").css({"background-color": "white", "color": "#000"});
+            //     $("#light").toggle(300);
+            //     $("#dark").toggle(300);
+            // })
+
+            
+        });
+    </script>
+</body>
+</html>
