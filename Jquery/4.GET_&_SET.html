@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4.GET_&_SET</title>
+</head>
+<body>
+    <script src="./jquery.min.js"></script>
+    <h1 id="heading" title="This is Heading.">This is Header.</h1>
+    <p id="para"></p>
+
+    <input type="text" id="userName">
+    <select name="" id="myFood">
+        <option value="apple">A</option>
+        <option value="orange">B</option>
+        <option value="lemon">C</option>
+        <option value="watermelon">D</option>
+    </select>
+    <!-- <button onclick="register();">Register</button> -->
+    <button id="btn">Register</button>
+
+    <script>
+        let head = document.getElementById("heading");
+        let para = document.getElementById("para");
+        
+        // function register() {
+        //     console.log(document.getElementById("userName").value);
+        //     let user = document.getElementById("userName").value;
+        //     para.textContent = user;
+        // }
+
+        $(document).ready(function() {
+            // console.log($("h1").html());
+            console.log($("h1").text());
+            // console.log($("h1").html("Hello, World"));
+            console.log($("#para").text("paragraph"));
+
+            $("#btn").click(function(){
+                let user = $("#userName").val();
+                // console.log(user);
+                // console.log($("#para").html("Hello, World"));
+                // $("#para").html(user);
+            //    console.log( $("#userName").val());
+            // console.log($("h1").attr("title"));
+            // console.log($("#myFood").val());
+            // console.log($("h1").html());
+            // console.log($("h1").text());
+            console.log($("#para").text(user));
+            // console.log($("h1").html("Heading"));
+            console.log($("#heading").html("Update Data"));
+        })
+        $("#userName").val("Hello world");
+        })
+    </script>
+
+</body>
+</html>

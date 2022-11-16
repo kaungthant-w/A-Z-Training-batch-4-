@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selector</title>
+    <style>
+      img {
+        width: 300px;
+      }
+
+      #heading {
+        position: relative;
+      }
+
+      .btn {
+        padding: 10px 25px;
+        font-size: 20px;
+        margin-bottom: 1rem;
+        border: none;
+        border-radius: 20px;
+        color: #fff;
+      }
+
+      .btnGreen {
+        background-color: green;
+      }
+      .btnRed {
+        background-color: red;
+      }
+      .btnInfo {
+        background-color: indigo;
+      }
+
+      .container {
+        height: 300px;
+      }
+      .btn {
+        padding: 12px 25px;
+        font-size: 20px;
+        margin-top: 1rem;
+        background-color: rgb(35, 190, 190);
+        text-shadow: 2px 2px 5px rgb(5, 5, 5);
+        font-weight: 600;
+        border-radius: 20px;
+        border: none;
+        cursor: pointer;
+      }
+
+      .btnRed {
+        background-color: red;
+      }
+
+      .btnOrange {
+        background-color: rgb(226, 136, 33);
+      }
+
+      .animateBtn1 {
+        background-color: rgba(228, 162, 39, 0.829);
+      }
+
+      .circle {
+        width: 150px;
+        height: 150px;
+        /* background-color: rgb(28, 209, 149); */
+        border-radius: 50%;
+        margin-top: 2rem;
+        /* position: static; */
+        position: absolute;
+      }
+
+      .circleBg {
+        background-image: linear-gradient(
+          to right,
+          rgb(39, 181, 185),
+          rgb(17, 75, 90)
+        );
+        border: 2px solid rgb(83, 203, 233);
+      }
+
+      .circleBg1 {
+        border: 2px solid rgb(212, 183, 138);
+        background-image: linear-gradient(
+          to right,
+          rgba(223, 194, 141, 0.829),
+          rgba(150, 103, 17, 0.829)
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <script src="./jquery.min.js"></script>
+    <h2 id="heading">Welcome From Gallery</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, dolores
+      totam corrupti ducimus voluptatibus voluptatum!
+    </p>
+    <div class="container">
+      <button class="btn animateBtn">Animate</button>
+      <button class="btn btnRed" id="stop">Stop</button>
+      <button class="btn btnOrange" id="change">changing</button>
+      <div class="circle circleBg" id="box"></div>
+    </div>
+
+    <div class="container">
+      <button class="btn animateBtn1">Animate1</button>
+      <div class="circle circleBg1" id="box1"></div>
+    </div>
+
+    <script>
+      $(document).ready(function () {
+        $(".animateBtn").click(function () {
+          $("#box").animate(
+            {
+              right: "30px",
+              // width:"200px",
+              // height:"200px"
+              // width:"+=200px",
+              // height:"+=200px"
+              // height:"toggle"
+              width: "-=20px",
+              height: "-=20px",
+            },
+            3000
+          );
+        });
+
+        $(".animateBtn1").click(function () {
+          $("#box1").animate(
+            {
+              right: "30px",
+              bottom: "198px",
+              // width:"200px",
+              // height:"200px"
+              // width:"+=200px",
+              // height:"+=200px"
+              // height:"toggle"
+              width: "-=20px",
+              height: "-=20px",
+            },
+            3000
+          );
+        });
+
+        $("#stop").click(function () {
+          $("#box").stop(), $("#box1").stop();
+        });
+
+        $("#change").click(function () {
+          $("#heading")
+            // .css("color", "red")
+            // .animate({ top: "20px" })
+            // .hide(200)
+            // .show(300);
+            .hide(100).show(200).animate({"top":"30px"}).css("color","red");
+        });
+      });
+    </script>
+  </body>
+</html>
