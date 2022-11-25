@@ -1,0 +1,17 @@
+.container {
+    height: 50vh;
+    width: 100%;
+    margin-top: 40px;
+
+    background-color: gray;
+    /* position: relative; */
+}
+
+.card {
+    background-color: red;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    margin-top: -40px;
+    /* top: -20px; */
+}
