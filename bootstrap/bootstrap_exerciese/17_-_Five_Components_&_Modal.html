@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Part - 2</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="container-fluid mt-5 d-flex">
+        <button class="btn btn-close m-3"></button>
+
+        <div>
+            <p class="m-3">
+                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseToggle">
+                  Collapse
+                </a>
+              </p>
+              <div class="collapse" id="collapseToggle">
+                <div class="card card-body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ut alias voluptates minus dolorem enim sint natus eligendi quo asperiores?
+                </div>
+              </div>
+        </div>
+  
+        <div>
+        <p class="m-3">
+            <a class="btn btn-warning" data-bs-toggle="collapse" href="#collapseToggle1">
+                Show Horizontal
+            </a>
+            </p>
+            <div class="collapse collapse-horizontal" id="collapseToggle1">
+            <div class="card card-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ut alias voluptates minus dolorem enim sint natus eligendi quo asperiores?
+            </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="dropdown m-3">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                  Dropdown btn
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+        </div>
+        <div>
+        <div class="dropdown m-3">
+            <button class="btn btn-danger dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                Dropdown Danger
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+            </div>  
+        </div>
+    </div>
+    <div class="container">
+        <div>
+            <div class="btn-group">
+                <button type="button" class="btn btn-danger">Action</button>
+                <button type="button" class="btn btn-danger btn-lg dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown">
+                  <span class="visually-hidden">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+              </div>
+          </div>
+    </div>
+    <div class="container mt-3">
+        <!-- Default dropup button -->
+        <div class="btn-group dropup">
+            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">
+              Dropup
+            </button>
+            <ul class="dropdown-menu">
+              <!-- Dropdown menu links -->
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+  
+          <!-- Split dropup button -->
+          <div class="btn-group dropup">
+            <button type="button" class="btn btn-secondary">
+              Split dropup
+            </button>
+            <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+              <span class="visually-hidden">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu">
+              <!-- Dropdown menu links -->
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+
+          <ul class="list-group mt-3 list-group-flush">
+            <li class="list-group-item">An item</li>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item">A third item</li>
+            <li class="list-group-item">A fourth item</li>
+            <li class="list-group-item">And a fifth one</li>
+          </ul>
+    </div>
+
+    <div class="m-3 ml-5">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Modal Show
+          </button>
+  
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="modalShow">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="modalShow">Modal title</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium nostrum pariatur minima! Accusantium minima praesentium, natus nisi magnam officiis laborum!
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis aliquid tenetur, quisquam porro fugit maxime vero minima praesentium pariatur ducimus qui saepe voluptatibus reprehenderit alias numquam atque impedit, nam earum quis id! Repellat, nesciunt dolor minima odio optio et mollitia accusantium enim commodi itaque assumenda quaerat cum explicabo quia atque in natus fugit veniam a voluptatibus ad! Distinctio molestiae cum odit obcaecati placeat voluptate doloremque. Dolor voluptates deserunt rerum illum officia hic tempore eaque quas perferendis, ad fuga laboriosam sit quasi, ipsa placeat dolorem sapiente asperiores optio numquam. Corrupti molestiae perferendis voluptate earum a nemo id blanditiis labore magnam sed consequatur eos doloremque autem nulla totam, omnis eaque, consectetur fugiat facere aut, esse adipisci suscipit? Quae, voluptates. A neque atque optio minima eum voluptas sunt, nobis nesciunt autem? Magni voluptas fugiat dignissimos. Quos id quia, quod unde recusandae maxime officia dolorem commodi non esse, nesciunt vitae nulla repellendus iste itaque? Repellat, rem voluptatibus? Nisi illo, asperiores eos amet aliquam nihil est quod dolore ex numquam eligendi commodi architecto, fugit ullam itaque. Ipsum minima delectus doloremque nemo vero non quaerat, distinctio alias laudantium voluptas beatae magnam libero fuga quo facere eveniet sint assumenda nulla et nisi atque? Explicabo quidem quaerat repudiandae!
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+     
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
