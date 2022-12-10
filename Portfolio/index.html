@@ -6,12 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <!-- fontawesome link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome-iconpicker/3.2.0/css/fontawesome-iconpicker.min.css" integrity="sha512-BfgviGirSi7OFeVB2z9bxp856rzU1Tyy9Dtq2124oRUZSKXIQqpy+2LPuafc2zMd8dNUa+F7cpxbvUsZZXFltQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome-iconpicker/3.2.0/css/fontawesome-iconpicker.min.css"/> -->
+
+    <!-- boxicon link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css"/>
 
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
-<body>
+<body class=" bg-light">
 
     <!-- navbar start  -->
     <nav class="navbar navbar-expand-lg bg-light">
@@ -23,19 +26,19 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link  text-danger active" href="#">Home</a>
+                <a class="nav-link  text-danger active" href="#home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-danger" href="#">Services & Skill</a>
+                <a class="nav-link text-danger opacity-50" href="#skill">Services & Skill</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-danger" href="#">Portfolio</a>
+                <a class="nav-link text-danger opacity-50" href="#projects">Portfolio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-danger" href="#">Freelence</a>
+                <a class="nav-link text-danger opacity-50" href="#">Freelence</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-danger" href="#">Contact</a>
+                <a class="nav-link text-danger opacity-50" href="#">Contact</a>
               </li> 
             </ul>
           </div>
@@ -43,12 +46,12 @@
       </nav>
       <!-- navbar end  -->
     <!-- home start  -->
-    <section id="home" class="home px-2 px-md-5">
+    <section id="home" class="home px-2 px-md-5 text-center text-md-start">
         <div class="container-lg">
-            <div class="row min-vh-100 align-items-center align-content-center">
+            <div class="row mt-3 mt-md-5 align-items-center align-content-center">
                 <div class="col-md-6 mt-5">
                     <div class="text-center">
-                        <img class=" rounded-circle border border-3" style="width: 320px;height:320px;" src="./img/profile-24.jpg" alt="">
+                        <img class=" rounded-circle border border-3" style="width: 70%;height:70%;" src="./img/profile-24.jpg" alt="">
                     </div>
                 </div>
                 <div class="col-md-6 order-md-first mt-5">
@@ -59,7 +62,7 @@
                         <p class="mt-4 text-muted">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem magnam molestias facilis numquam odio labore beatae officiis provident saepe praesentium!
                         </p>
-                        <a href="#" class="btn btn-danger mt-3 px-3">My CV Form</a>
+                        <a href="#" class="btn btn-danger mt-3 px-3">My Work</a>
                     </div>
                 </div>
             </div>
@@ -67,7 +70,7 @@
     </section>
     <!-- home end  -->
     <!-- skill section start  -->
-    <div class="skill py-5" id="skill">
+    <div class="skill py-5 my-5 my-md-2" id="skill">
         <div class="container-lg">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
@@ -81,7 +84,7 @@
                     <div class="about-text">
                         <h3 class="fs-3 mb-3">Freelencer</h3>
                     </div>
-                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque pariatur possimus ducimus rem voluptas harum illum ab sapiente dicta nam.</p>
+                    <p class="text-muted mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque pariatur possimus ducimus rem voluptas harum illum ab sapiente dicta nam.</p>
                     <div class="row text-uppercase">
                         <div class="col-sm-4">
                             <div class="item">
@@ -102,15 +105,98 @@
                             </div>
                         </div>
                     </div>
+                    <!-- content btn start  -->
+                    <div class="row my-4">
+                        <div class="col-lg-12 d-flex align-items-center">
+                            <a href="#" class="btn btn-danger me-4 px-3">Download CV</a>
+                            <div class="social-link">
+                                <a href="https://www.facebook.com/profile.php?id=100077645595500" class=" text-decoration-none" target="_blank"><i class='bx bxl-facebook text-danger'></i></a>
+                                <a href="#" class=" text-decoration-none"><i class='bx bxl-twitter text-danger'></i></a>
+                                <a href="#" class=" text-decoration-none"><i class='bx bxl-instagram text-danger'></i></a>
+                                <a href="#" class=" text-decoration-none"><i class='bx bxl-medium text-danger' ></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- content btn end  -->
                 </div>
-                <div class="col-md-6">
-
+                <div class="col-md-6 px-md-5 my-4 my-md-2">
+                    <div class="skill mb-4">
+                        <h3 class="fs-6">HTML</h3>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" style="width:80%;" role="progressbar"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <h3 class="fs-6">CSS</h3>
+                        <div class="progress">
+                            <div class="progress-bar bg-warning" style="width:75%;" role="progressbar"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <h3 class="fs-6">JavaScript</h3>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" style="width:90%;" role="progressbar"></div>
+                        </div>
+                    </div>
+                    <div class="skill mb-4">
+                        <h3 class="fs-6">Bootstrap</h3>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" style="width:60%;" role="progressbar"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
             
         </div>
     </div>
     <!-- skill section end  -->
+    <!-- project section start  -->
+    <div class="projects m-2 m-md-6" id="projects">
+        <div class="container-lg">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title text-center mb-5">
+                        <h2 class="fw-bold">What I Do ?</h2>
+                    </div>
+                </div>
+            </div>
+            <!-- project  -->
+            <div class="row text-center p-3 p-lg-0">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="project-item bg-white p-4 shadow-sm rounded">
+                        <div class="icon">
+                            <i class='bx bx-code fs-2 text-danger my-3'></i>
+                        </div>
+                        <h3 class="fs-5 py-3">Web Development</h3>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis libero dolorem impedit officia tempore eos mollitia in quas nostrum exercitationem.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-sm-4">
+                    <div class="project-item bg-white p-4 shadow-sm rounded">
+                        <div class="icon">
+                            <i class='bx bxs-bulb fs-2 text-danger my-3'></i>
+                        </div>
+                        <h3 class="fs-5 py-3">Creative Idea</h3>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis libero dolorem impedit officia tempore eos mollitia in quas nostrum exercitationem.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-sm-4">
+                    <div class="project-item bg-white p-4 shadow-sm rounded">
+                        <div class="icon">
+                            <i class='bx bx-image-alt fs-2 text-danger my-3' ></i>
+                        </div>
+                        <h3 class="fs-5 py-3">Photoshop</h3>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis libero dolorem impedit officia tempore eos mollitia in quas nostrum exercitationem.</p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- project  -->
+        </div>
+    </div>
+    <!-- project section end  -->
 
 
        
